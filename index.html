@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight searcher</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" 
+        rel="stylesheet">
+</head>
+        
+
+
+<body>
+    <header class="header container">
+        <img src="" alt="Logo Uobsite" class="logo">
+        <nav class="header_nav">
+            <ul>
+                <li class="header_link"><a href="#">Flights on watch</a></li>
+                <li class="header_link"><a href="#">About us</a></li>
+                <li class="header_link"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form container">
+            <h1 class="form_title">Search your flight</h1>
+            <div class="options">
+                
+                    <input type="radio" name="flight-type" value="Return" id="return" checked />
+                    <label for="return">RETURN</label>
+                
+                    <input type="radio" name="flight-type" value="Single" id="one-way" />
+                    <label for="one-way">ONE WAY</label>    
+            </div> 
+            <div class="npassengers">
+                    <label> Number of passengers:</label>
+                    <input type="number" id="nPassenger" value="1" name="nPassenger" min="1" max="10">
+                
+            </div>
+            <div class="location">
+                <label>From:</label>
+                <input id="departure" type="text">
+                <label>To:</label>
+                <input id="to" type="text">
+            </div>
+            <div class="dates">
+                <label>Departure Date:</label>
+                <input id="departureD" type="date">
+                <label>Return Date:</label>
+                <input id="returnD" type="date">
+            </div>
+            <button id="search" class="search">Search</button>
+        </section>     
+       <section class="result container">
+            <ul id="lista">
+
+                
+            </ul>
+        </section>
+
+        <section class = "saved container">
+            <ul id="lista2">
+
+                
+            </ul>
+        </section>
+    </main>
+    <!--<script src="index.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="jquery.js"> </script>
+    <script src= "index.js"> </script>
+</body>
+</html>
