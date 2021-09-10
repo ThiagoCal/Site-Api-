@@ -1,0 +1,65 @@
+.header {
+    color:var(--fonte-base1);
+    background-color: var(--header2);
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    position: absolute;
+}
+
+.logo {
+    margin-bottom: 1rem;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.header_nav {
+    text-align: center;
+}
+
+.header_link {
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-right: .7rem;
+    margin-bottom: 1.25rem;
+    margin-left: .7rem;
+}
+
+.form  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: var(--fonte-base1);
+    text-align: center;
+    
+    background: rgb(20,93,160);
+    background: linear-gradient(180deg, rgba(20,93,160,1) 7%, rgba(45,136,190,1) 51%, rgba(130,187,207,1) 100%);
+
+    padding-top: 12.25rem;
+    padding-bottom: 2.5rem;
+}
+
+.form_title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-family: var(--montserrat),san;
+}
+
+.options, .npassengers, .location, .dates{
+    margin-bottom: 1rem;
+}
+
+
+.result {
+    padding-bottom: 2.5rem;
+    padding-top: 2rem;
+    background-color: rgba(130,187,207,1);
+    text-align: center;
+}

@@ -29,8 +29,7 @@ search.onclick = function(){
     console.log(dataReq);
     $.post( "http://localhost:8080", dataReq, function( dataRes ) {
         console.log(dataRes)
-        let list
-        let depRes = document.createElement("li");
+        let list = document.getElementById('lista')
         //depRes.classList.add("list");
         let carrier =  dataRes.Carriers[0].Name;
         let from = dataRes.Places[1].Name;
@@ -40,7 +39,14 @@ search.onclick = function(){
         depRes.innerHTML(from);
         depRes.innerHTML(to);
         depRes.innerHTML(price);*/
+        let result = document.createElement('li');
+        
 
+        let content = `<p class = "content">Carrier:${carrier} From: ${from} To: ${to} Price: ${price}</p>`
+
+        result.innerHTML= content;
+        list.appendChild(result);
+        // return result;
     },"json");
 }
 //--------------------------------------------------------------------
