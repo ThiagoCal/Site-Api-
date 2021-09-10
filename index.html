@@ -1,31 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BioRhyme&amp;family=Space+Mono&amp;display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <title>Ceep</title>
+    <meta>
+    <meta>
+    <meta>
+    <title></title>
 </head>
-<body>
-  <div class="app">
-    <div class="todo-list">
-      <h1 class="title">
-        Ceep
-      </h1>
-      
-      <form class="form" action="">
-        <input class="form-input" type="text" data-form-input>
-        <input type="datetime-local" placeholder="preencha 2020-02-23" data-form-date>
-        <button class="form-button" data-form-button> Novo Item </button>
-      </form>
-
-      <ul class="list" data-list>
         
-      </ul>
-    </div>
+
+
+<body>
+    <main>
+        
+            <div class="options">
+                
+                    <input type="radio" name="flight-type" value="Return" id="return" checked />
+                    <label for="return">RETURN</label>
+               
+                    <input type="radio" name="flight-type" value="Single" id="one-way" />
+                    <label for="one-way">ONE WAY</label>
+                    
+            </div> 
+            <div class="npassengers">
+                    <label> Number of passengers:</label>
+                    <input type="number" id="nPassenger" value="1" name="nPassenger" min="1" max="10">
+               
+            </div>
+            <div class="location">
+                <input id="departure" type="text">
+                <input id="to" type="text">
+            </div>
+            <div class="dates">
+                <input id="departureD" type="date">
+                <input id="returnD" type="date">
+            </div>
+            <button id="search" class="search">Search</button>
+            
+       
+        <ul id="lista">
+
+            
+        </ul>
+    </main>
+    <!--<script src="index.js"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-    <script type="module" src="main1.js"></script>
+    <script src="jquery.js"> </script>
+    <script src= "index.js"> </script>
 </body>
 </html>
